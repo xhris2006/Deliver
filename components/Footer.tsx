@@ -22,17 +22,18 @@ export default function Footer() {
   const { t } = useLanguage();
 
   const footerLinks = [
-    { label: t.nav.home, href: "#home" },
-    { label: t.nav.restaurants, href: "#restaurants" },
-    { label: t.nav.howItWorks, href: "#how-it-works" },
-    { label: t.nav.partners, href: "#partners" },
+    { label: t.nav.home, href: "/" },
+    { label: t.nav.meals, href: "/meals" },
+    { label: t.nav.shops, href: "/shops" },
+    { label: t.nav.orders, href: "/orders" },
+    { label: t.nav.help, href: "/help" },
   ];
 
   return (
     <footer className="bg-primary-950 text-primary-100">
       <Container className="py-12">
         <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-between">
-          <Link href="#home" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-600 text-white">
               <UtensilsCrossed className="h-5 w-5" aria-hidden="true" />
             </span>

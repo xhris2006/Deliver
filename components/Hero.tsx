@@ -32,14 +32,14 @@ export default function Hero() {
 
             <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
               <Link
-                href="#restaurants"
+                href="/shops"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-primary-600 px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary-700"
               >
                 {t.hero.browseCta}
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
               <Link
-                href="#partners"
+                href="/help#add-shop"
                 className="inline-flex items-center justify-center rounded-full border border-primary-200 bg-white px-7 py-3.5 text-sm font-semibold text-primary-700 transition-colors hover:border-primary-300 hover:bg-primary-50 dark:border-neutral-700 dark:bg-neutral-950 dark:text-primary-300 dark:hover:border-neutral-600 dark:hover:bg-neutral-800"
               >
                 {t.hero.partnerCta}
