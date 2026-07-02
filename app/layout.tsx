@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { LanguageProvider } from "@/components/providers/LanguageProvider";
+import { AppProvider } from "@/components/providers/AppProvider";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const inter = Inter({
@@ -37,7 +40,13 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="font-sans">
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          <AppProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </AppProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

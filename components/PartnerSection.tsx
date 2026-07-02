@@ -48,7 +48,7 @@ export default function PartnerSection() {
             </ul>
 
             <Link
-              href="#partners"
+              href="/help#add-shop"
               className="mt-2 inline-flex items-center gap-2 rounded-full bg-primary-600 px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary-700"
             >
               {t.partner.cta}

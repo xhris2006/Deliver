@@ -3,10 +3,18 @@ export type Language = "en" | "fr";
 const en = {
   nav: {
     home: "Home",
-    restaurants: "Restaurants",
-    howItWorks: "How it works",
-    partners: "Partners",
+    meals: "Meals",
+    shops: "Shops",
+    orders: "My orders",
+    help: "Help & support",
     orderNow: "Order now",
+  },
+  common: {
+    back: "Back",
+    featured: "Featured",
+    reviews: "reviews",
+    like: "Like this meal",
+    unlike: "Remove like",
   },
   hero: {
     badge: "Trusted by 10,000+ food lovers",
@@ -73,41 +81,8 @@ const en = {
     eyebrow: "Popular near you",
     title: "Loved by thousands of customers",
     description:
-      "Discover the highest-rated restaurants in your area, hand-picked for quality, taste and reliable delivery.",
-    orderNow: "Order Now",
-    reviews: "reviews",
-    items: [
-      {
-        name: "Green Garden Kitchen",
-        description: "Fresh salads, grain bowls and healthy plates made daily.",
-        tag: "Healthy",
-      },
-      {
-        name: "Bella Napoli",
-        description: "Wood-fired pizzas and homemade pasta, straight from Italy.",
-        tag: "Italian",
-      },
-      {
-        name: "Burger Society",
-        description: "Gourmet burgers with premium beef and signature sauces.",
-        tag: "Burgers",
-      },
-      {
-        name: "Sakura Sushi",
-        description: "Hand-rolled sushi and Japanese classics by master chefs.",
-        tag: "Japanese",
-      },
-      {
-        name: "Spice Route",
-        description: "Rich curries and tandoori specialties with authentic spices.",
-        tag: "Indian",
-      },
-      {
-        name: "Le Petit Café",
-        description: "Artisan brunch, pastries and specialty coffee all day long.",
-        tag: "Brunch",
-      },
-    ],
+      "The highest-rated shops in your area — the more you like their meals, the more they are featured.",
+    viewAll: "View all shops",
   },
   howItWorks: {
     eyebrow: "How it works",
@@ -159,6 +134,87 @@ const en = {
       },
     ],
   },
+  shopsPage: {
+    title: "Find your shop",
+    description:
+      "Search among verified shops. The best rated and most liked ones are featured first.",
+    searchPlaceholder: "Search a shop, a cuisine...",
+    noResults: "No shop matches your search.",
+  },
+  shopPage: {
+    menuTitle: "Available meals",
+    report: "Report this shop",
+    reported: "Shop reported",
+    order: "Order",
+  },
+  mealsPage: {
+    title: "All meals",
+    description:
+      "Browse every meal available on the platform. Like your favorites to feature their shops.",
+    from: "From",
+  },
+  ordersPage: {
+    title: "Recent orders",
+    description: "Meals you recently ordered, most recent first.",
+    empty: "You have not ordered anything yet.",
+    emptyCta: "Discover the shops",
+    reorder: "Order again",
+  },
+  helpPage: {
+    title: "Help & support",
+    description:
+      "A question, a problem with an order? Our team is here to help you every day.",
+    cards: [
+      {
+        title: "Live chat",
+        description: "Chat with our support team, average reply under 2 minutes.",
+      },
+      {
+        title: "Email",
+        description: "Write to support@deliver.app, we reply within 24 hours.",
+      },
+      {
+        title: "FAQ",
+        description: "Find instant answers to the most common questions.",
+      },
+    ],
+    addShopTitle: "Add your shop",
+    addShopDescription:
+      "Restaurant owner? Join the platform, publish your menu and start receiving orders today.",
+    form: {
+      name: "Shop name",
+      namePlaceholder: "e.g. Chez Fatou",
+      cuisine: "Cuisine type",
+      cuisinePlaceholder: "e.g. African, Italian, Fast-food...",
+      email: "Contact email",
+      emailPlaceholder: "you@example.com",
+      message: "Tell us about your shop",
+      messagePlaceholder: "Your specialties, your address, your hours...",
+      submit: "Submit my shop",
+      success:
+        "Thank you! Your request has been received. Our team will contact you within 48 hours.",
+    },
+  },
+  report: {
+    title: "Report this shop",
+    description:
+      "Tell us what is wrong. Our moderation team reviews every report.",
+    reasons: [
+      "Misleading information",
+      "Hygiene concerns",
+      "Wrong prices or fees",
+      "Inappropriate content",
+      "Other",
+    ],
+    commentLabel: "Details (optional)",
+    commentPlaceholder: "Describe the problem...",
+    cancel: "Cancel",
+    submit: "Send report",
+  },
+  toast: {
+    orderPlaced: "Order placed — find it in your recent orders.",
+    reportSent: "Report sent. Thank you for helping the community.",
+  },
   footer: {
     rights: "All rights reserved.",
   },
@@ -167,10 +223,18 @@ const en = {
 const fr: typeof en = {
   nav: {
     home: "Accueil",
-    restaurants: "Restaurants",
-    howItWorks: "Comment ça marche",
-    partners: "Partenaires",
+    meals: "Repas",
+    shops: "Boutiques",
+    orders: "Mes commandes",
+    help: "Aide & support",
     orderNow: "Commander",
+  },
+  common: {
+    back: "Retour",
+    featured: "Mise en avant",
+    reviews: "avis",
+    like: "Aimer ce repas",
+    unlike: "Retirer le like",
   },
   hero: {
     badge: "Approuvé par plus de 10 000 gourmets",
@@ -237,47 +301,8 @@ const fr: typeof en = {
     eyebrow: "Populaires près de chez vous",
     title: "Adorés par des milliers de clients",
     description:
-      "Découvrez les restaurants les mieux notés de votre région, sélectionnés pour leur qualité, leur goût et leur fiabilité.",
-    orderNow: "Commander",
-    reviews: "avis",
-    items: [
-      {
-        name: "Green Garden Kitchen",
-        description:
-          "Salades fraîches, bols de céréales et assiettes saines préparés chaque jour.",
-        tag: "Sain",
-      },
-      {
-        name: "Bella Napoli",
-        description:
-          "Pizzas au feu de bois et pâtes maison, tout droit venues d'Italie.",
-        tag: "Italien",
-      },
-      {
-        name: "Burger Society",
-        description:
-          "Burgers gourmets au bœuf premium et sauces signature.",
-        tag: "Burgers",
-      },
-      {
-        name: "Sakura Sushi",
-        description:
-          "Sushis roulés à la main et classiques japonais par des chefs experts.",
-        tag: "Japonais",
-      },
-      {
-        name: "Spice Route",
-        description:
-          "Currys riches et spécialités tandoori aux épices authentiques.",
-        tag: "Indien",
-      },
-      {
-        name: "Le Petit Café",
-        description:
-          "Brunch artisanal, pâtisseries et café de spécialité toute la journée.",
-        tag: "Brunch",
-      },
-    ],
+      "Les boutiques les mieux notées de votre région — plus vous aimez leurs repas, plus elles sont mises en avant.",
+    viewAll: "Voir toutes les boutiques",
   },
   howItWorks: {
     eyebrow: "Comment ça marche",
@@ -328,6 +353,90 @@ const fr: typeof en = {
           "Répondez aux questions et fidélisez grâce à une messagerie intégrée.",
       },
     ],
+  },
+  shopsPage: {
+    title: "Trouvez votre boutique",
+    description:
+      "Cherchez parmi les boutiques vérifiées. Les mieux notées et les plus aimées sont mises en avant.",
+    searchPlaceholder: "Chercher une boutique, une cuisine...",
+    noResults: "Aucune boutique ne correspond à votre recherche.",
+  },
+  shopPage: {
+    menuTitle: "Repas disponibles",
+    report: "Signaler cette boutique",
+    reported: "Boutique signalée",
+    order: "Commander",
+  },
+  mealsPage: {
+    title: "Tous les repas",
+    description:
+      "Parcourez tous les repas disponibles sur la plateforme. Aimez vos préférés pour mettre en avant leurs boutiques.",
+    from: "Chez",
+  },
+  ordersPage: {
+    title: "Commandes récentes",
+    description: "Les repas que vous avez récemment commandés, du plus récent au plus ancien.",
+    empty: "Vous n'avez encore rien commandé.",
+    emptyCta: "Découvrir les boutiques",
+    reorder: "Commander à nouveau",
+  },
+  helpPage: {
+    title: "Aide & support",
+    description:
+      "Une question, un souci avec une commande ? Notre équipe est là pour vous aider tous les jours.",
+    cards: [
+      {
+        title: "Chat en direct",
+        description:
+          "Discutez avec notre équipe support, réponse moyenne en moins de 2 minutes.",
+      },
+      {
+        title: "Email",
+        description:
+          "Écrivez à support@deliver.app, nous répondons sous 24 heures.",
+      },
+      {
+        title: "FAQ",
+        description:
+          "Trouvez des réponses instantanées aux questions les plus fréquentes.",
+      },
+    ],
+    addShopTitle: "Ajouter votre boutique",
+    addShopDescription:
+      "Restaurateur ? Rejoignez la plateforme, publiez votre menu et commencez à recevoir des commandes dès aujourd'hui.",
+    form: {
+      name: "Nom de la boutique",
+      namePlaceholder: "ex. Chez Fatou",
+      cuisine: "Type de cuisine",
+      cuisinePlaceholder: "ex. Africaine, Italienne, Fast-food...",
+      email: "Email de contact",
+      emailPlaceholder: "vous@exemple.com",
+      message: "Parlez-nous de votre boutique",
+      messagePlaceholder: "Vos spécialités, votre adresse, vos horaires...",
+      submit: "Proposer ma boutique",
+      success:
+        "Merci ! Votre demande a bien été reçue. Notre équipe vous contactera sous 48 heures.",
+    },
+  },
+  report: {
+    title: "Signaler cette boutique",
+    description:
+      "Dites-nous ce qui ne va pas. Notre équipe de modération examine chaque signalement.",
+    reasons: [
+      "Informations trompeuses",
+      "Problèmes d'hygiène",
+      "Prix ou frais incorrects",
+      "Contenu inapproprié",
+      "Autre",
+    ],
+    commentLabel: "Détails (optionnel)",
+    commentPlaceholder: "Décrivez le problème...",
+    cancel: "Annuler",
+    submit: "Envoyer le signalement",
+  },
+  toast: {
+    orderPlaced: "Commande passée — retrouvez-la dans vos commandes récentes.",
+    reportSent: "Signalement envoyé. Merci d'aider la communauté.",
   },
   footer: {
     rights: "Tous droits réservés.",
