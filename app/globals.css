@@ -8,6 +8,6 @@
   }
 
   body {
-    @apply bg-white text-neutral-800 antialiased;
+    @apply bg-white text-neutral-800 antialiased dark:bg-neutral-950 dark:text-neutral-200;
   }
 }

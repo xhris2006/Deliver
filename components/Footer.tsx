@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {
   UtensilsCrossed,
@@ -7,13 +9,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import Container from "./Container";
-
-const footerLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Restaurants", href: "#restaurants" },
-  { label: "How it works", href: "#how-it-works" },
-  { label: "Partners", href: "#partners" },
-];
+import { useLanguage } from "./providers/LanguageProvider";
 
 const socials = [
   { label: "Facebook", href: "#", icon: Facebook },
@@ -23,6 +19,15 @@ const socials = [
 ];
 
 export default function Footer() {
+  const { t } = useLanguage();
+
+  const footerLinks = [
+    { label: t.nav.home, href: "#home" },
+    { label: t.nav.restaurants, href: "#restaurants" },
+    { label: t.nav.howItWorks, href: "#how-it-works" },
+    { label: t.nav.partners, href: "#partners" },
+  ];
+
   return (
     <footer className="bg-primary-950 text-primary-100">
       <Container className="py-12">
@@ -66,7 +71,7 @@ export default function Footer() {
 
         <div className="mt-10 border-t border-white/10 pt-6 text-center">
           <p className="text-xs text-primary-300">
-            &copy; {new Date().getFullYear()} Deliver. All rights reserved.
+            &copy; {new Date().getFullYear()} Deliver. {t.footer.rights}
           </p>
         </div>
       </Container>
